@@ -25,6 +25,8 @@ Partial Class category
         Me.namecategory = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.categoryTable = New System.Windows.Forms.DataGridView()
+        Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         CType(Me.categoryTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -47,16 +49,36 @@ Partial Class category
         'categoryTable
         '
         Me.categoryTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.categoryTable.Location = New System.Drawing.Point(13, 108)
+        Me.categoryTable.Location = New System.Drawing.Point(13, 78)
         Me.categoryTable.Name = "categoryTable"
-        Me.categoryTable.Size = New System.Drawing.Size(704, 182)
+        Me.categoryTable.Size = New System.Drawing.Size(704, 212)
         Me.categoryTable.TabIndex = 2
+        '
+        'btnEdit
+        '
+        Me.btnEdit.Location = New System.Drawing.Point(352, 28)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(75, 23)
+        Me.btnEdit.TabIndex = 3
+        Me.btnEdit.Text = "Edit"
+        Me.btnEdit.UseVisualStyleBackColor = True
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(433, 28)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.TabIndex = 4
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
         'category
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(729, 302)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.categoryTable)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.namecategory)
@@ -71,4 +93,6 @@ Partial Class category
     Friend WithEvents namecategory As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents categoryTable As DataGridView
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnDelete As Button
 End Class
