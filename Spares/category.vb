@@ -55,6 +55,7 @@ Public Class category
 
     End Sub
 
+
     Private Sub categoryTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles categoryTable.CellContentClick
         index = e.RowIndex
         Dim selectedRow As DataGridViewRow
